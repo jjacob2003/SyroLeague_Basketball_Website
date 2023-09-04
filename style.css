@@ -1,0 +1,316 @@
+body, h1, h2, h3, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #5c272a;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+h1 {
+    color: #f1c47d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #5c272a;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #a65f4a;
+    transform: scale(1.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bracket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.team {
+    width: 120px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.versus {
+    margin: 0 10px;
+    font-weight: bold;
+    position: relative;
+    top: 6px;
+}
+
+.match:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.match:first-child:before {
+    top: 40px;
+}
+
+.match:last-child:before {
+    bottom: 40px;
+}
+
+#awards {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#awards h2 {
+    color: #a05638;
+}
+
+#award-table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+#award-table th,
+#award-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#award-table th {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+#award-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+h2, h3 {
+    color: #df8d65;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+#home {
+    text-align: center;
+}
+
+#home h2 {
+    color: #a05638;
+}
+
+#rosters h2 {
+    color: #a05638;
+}
+
+#rosters h3 {
+    color: #f1c47d;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+#rosters li {
+    margin-left: 50px;
+    position: relative;
+}
+
+#rosters li::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.5em;
+}
+
+#rosters table {
+    margin-left: 50px;
+    width: 90%;
+}
+
+#rosters th,
+#rosters td {
+    text-align: left;
+    padding: 5px;
+}
+
+#rosters th:nth-child(2),
+#rosters td:nth-child(2),
+#rosters th:nth-child(3),
+#rosters td:nth-child(3) {
+    text-align: center;
+    width: 25%;
+}
+
+#rosters th:nth-child(1),
+#rosters td:nth-child(1) {
+    width: 35%;
+}
+
+#schedule h2 {
+    color: #a05638;
+}
+
+#schedule p {
+    margin-left: 30px;
+}
+
+#standings h2 {
+    color: #a05638;
+}
+
+#standings table,
+#stats table,
+#league-leaders table {
+    margin: 0 30px;
+    width: calc(100% - 60px);
+    border-collapse: collapse;
+    animation: fadeIn 0.5s ease;
+}
+
+#standings th,
+#standings td,
+#stats th,
+#stats td,
+#league-leaders th,
+#league-leaders td {
+    text-align: left;
+    padding: 5px;
+}
+
+#standings tr:hover,
+#stats tr:hover,
+#league-leaders tr:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+#stats h2 {
+    color: #a05638;
+    margin-bottom: 10px;
+}
+
+#league-leaders h2 {
+    color: #a05638;
+    margin-bottom: 10px;
+}
+
+#league-leaders ol {
+    margin-left: 30px;
+}
+
+#league-leaders li {
+    margin-bottom: 5px;
+}
+
+#league-leaders li::marker {
+    color: #a65f4a;
+}
+
+#league-leaders h3 {
+    color: #a65f4a;
+    margin-bottom: 10px;
+}
+
+#league-leaders th {
+    background-color: #f1f1f1;
+}
+
+#league-leaders tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#league-leaders tr:hover {
+    background-color: #ddd;
+}
+
+#league-leaders td:first-child {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1c47d;
+    color: #00210e;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
